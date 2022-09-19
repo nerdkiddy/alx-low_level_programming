@@ -1,37 +1,41 @@
-#include "main.h"
-
 #include <stdio.h>
 
+#include <stdlib.h>
+
 /**
- * main - print sum of all multiples of 3 and 5 up to 1024
- * @void: Empty parameter list for main
- * Description: prints the sum of all multiples of 3 and 5
- * up to but not including 1024
- * Return: 0 for success
- **/
+ * main - main block
+ *
+ * Return: 0.
+ */
 
 int main(void)
 
 {
 
-	int sum, i;
+	int c = 0;
+
+	int sum = 0;
 
 
 
-	sum = 0;
-
-
-
-	for (i = 1; i < 1024; i++)
+	while (c < 1024)
 
 	{
 
-		if ((i % 3 == 0) || (i % 5 == 0))
+		if (c % 3 == 0 || c % 5 == 0)
 
-			sum += i;
+		{
+
+			sum += c;
+
+		}
+
+		c++;
 
 	}
 
-	printf("%d\n", sum);
+	printf("%i\n", sum);
 
 	return (0);
+
+}
