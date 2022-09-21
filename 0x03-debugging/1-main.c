@@ -2,9 +2,11 @@
 
 
 /**
-* main - causes an infinite loop
-* Return: 0
+*main - causes and infinite loop
+*Return: 0 for success
 */
+
+
 
 int main(void)
 
